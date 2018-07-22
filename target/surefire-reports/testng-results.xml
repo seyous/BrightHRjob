@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="BDD Test Suite" duration-ms="33876" started-at="2018-07-22T16:28:05Z" finished-at="2018-07-22T16:28:39Z">
+  <suite name="BDD Test Suite" duration-ms="29112" started-at="2018-07-22T19:06:07Z" finished-at="2018-07-22T19:06:36Z">
     <groups>
       <group name="cucumber">
-        <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner@3c09711b]" name="feature" class="TestRunner"/>
+        <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner@7946e1f4]" name="feature" class="TestRunner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Login and Update Profile Test" duration-ms="33876" started-at="2018-07-22T16:28:05Z" finished-at="2018-07-22T16:28:39Z">
+    <test name="Login and Update Profile Test" duration-ms="29112" started-at="2018-07-22T19:06:07Z" finished-at="2018-07-22T19:06:36Z">
       <class name="TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestRunner@3c09711b]" name="setUpClass" is-config="true" duration-ms="410" started-at="2018-07-22T16:28:05Z" finished-at="2018-07-22T16:28:05Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestRunner@7946e1f4]" name="setUpClass" is-config="true" duration-ms="613" started-at="2018-07-22T19:06:07Z" finished-at="2018-07-22T19:06:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner@3c09711b]" name="feature" duration-ms="32970" started-at="2018-07-22T16:28:06Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-07-22T16:28:39Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner@7946e1f4]" name="feature" duration-ms="28176" started-at="2018-07-22T19:06:08Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-07-22T19:06:36Z">
           <params>
             <param index="0">
               <value>
@@ -29,8 +29,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'OJO-PC', ip: '192.168.43.249', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 6544, moz:profile: C:\Users\OJO\AppData\Local\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: b4b2c297-d85c-46bd-9e50-e4e1cb1e3972
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9924, moz:profile: C:\Users\OJO\AppData\Local\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: ef80da58-2fea-4cb6-bc38-ce0cf4c273e5
 *** Element info: {Using=xpath, value=/html/body/div[2]/main/div/div/div/div[2]/div/div[1]/h2}]]>
             </message>
             <full-stacktrace>
@@ -39,8 +39,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'OJO-PC', ip: '192.168.43.249', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 6544, moz:profile: C:\Users\OJO\AppData\Local\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: b4b2c297-d85c-46bd-9e50-e4e1cb1e3972
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9924, moz:profile: C:\Users\OJO\AppData\Local\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: ef80da58-2fea-4cb6-bc38-ce0cf4c273e5
 *** Element info: {Using=xpath, value=/html/body/div[2]/main/div/div/div/div[2]/div/div[1]/h2}
 at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 at TestRunner.feature(TestRunner.java:29)
@@ -69,8 +69,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'OJO-PC', ip: '192.168.43.249', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 6544, moz:profile: C:\Users\OJO\AppData\Local\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: b4b2c297-d85c-46bd-9e50-e4e1cb1e3972
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9924, moz:profile: C:\Users\OJO\AppData\Local\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: ef80da58-2fea-4cb6-bc38-ce0cf4c273e5
 *** Element info: {Using=xpath, value=/html/body/div[2]/main/div/div/div/div[2]/div/div[1]/h2}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -94,7 +94,7 @@ at ✽.And I am on the my profile page(loginpage.feature:12)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner@3c09711b]" name="tearDownClass" is-config="true" duration-ms="83" started-at="2018-07-22T16:28:39Z" finished-at="2018-07-22T16:28:39Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner@7946e1f4]" name="tearDownClass" is-config="true" duration-ms="43" started-at="2018-07-22T19:06:36Z" finished-at="2018-07-22T19:06:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
