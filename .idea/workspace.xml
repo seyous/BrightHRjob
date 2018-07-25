@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="69ec2272-83ee-49b8-a918-e9b8a12bf776" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/loginpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/loginpage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utility/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/loginpage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/loginpage.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-reports/CucumberTestReport.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/CucumberTestReport.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-reports/cucumber-pretty/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/cucumber-pretty/report.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-reports/rerun.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/rerun.txt" afterDir="false" />
@@ -73,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Hooks.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Hooks.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/utility/Hooks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+            <state relative-caret-position="378">
+              <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#542#543#0" expanded="true" />
@@ -87,10 +84,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loginpage.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="loginpage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/loginpage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1384">
+            <state relative-caret-position="1491">
               <caret line="71" column="66" selection-start-line="71" selection-start-column="66" selection-end-line="71" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -124,8 +121,8 @@
         <option value="$PROJECT_DIR$/src/test/java/TestRunner.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/requestabsence.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/loginpage.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/utility/Hooks.java" />
         <option value="$PROJECT_DIR$/src/test/java/stepdefs/loginpage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utility/Hooks.java" />
       </list>
     </option>
   </component>
@@ -397,7 +394,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532478890913</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="throws Exception removed from code">
+      <created>1532480909145</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1532480909146</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -425,7 +429,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="bottom" id="TODO" order="9" />
@@ -435,8 +438,8 @@
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" weight="0.3299435" />
       <window_info anchor="right" id="Maven Projects" order="4" visible="true" weight="0.09344791" />
-      <window_info anchor="bottom" id="Version Control" order="0" weight="0.34011298" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.319774" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="0" visible="true" weight="0.34011298" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.319774" />
       <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
@@ -466,7 +469,9 @@
     </ignored-roots>
     <MESSAGE value="initial commit" />
     <MESSAGE value="Hooks Added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hooks Added" />
+    <MESSAGE value="throws Exception removed from code" />
+    <MESSAGE value="Additional scenario to handle time added to code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Additional scenario to handle time added to code" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -834,21 +839,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/Hooks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#542#543#0" expanded="true" />
-            <element signature="e#571#572#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/loginpage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1384">
+        <state relative-caret-position="1491">
           <caret line="71" column="66" selection-start-line="71" selection-start-column="66" selection-end-line="71" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -856,6 +849,18 @@
             <element signature="e#1491#1492#0" expanded="true" />
             <element signature="e#1868#1869#0" expanded="true" />
             <element signature="e#1934#1935#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/Hooks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
           </folding>
         </state>
       </provider>
