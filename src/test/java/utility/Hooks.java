@@ -19,10 +19,7 @@ public class Hooks {
     public void openHomePage() {
 
     driver = new FirefoxDriver();
-    System.setProperty("webdriver.gecko.driver", "C:\\Users\\OJO\\IdeaProjects\\BrightHRexercise\\src\\test\\resources\\geckodriver\\geckodriver.exe");
-    String appl = "https://app.brighthr.com";
-    Hooks.driver.get(appl);
-    }
+       }
 
 
 

@@ -11,11 +11,28 @@
         "steps": [
           {
             "result": {
-              "duration": 197219544,
-              "error_message": "java.lang.NullPointerException\r\n\tat stepdefs.loginpage.i_fill_the_username_with(loginpage.java:24)\r\n\tat ✽.Given I fill the username with \"oluseyi.ojo\"(loginpage.feature:8)\r\n",
+              "duration": 227265181,
+              "error_message": "java.lang.NullPointerException\r\n\tat stepdefs.loginpage.iNavigateToTheLoginPage(loginpage.java:25)\r\n\tat ✽.Given I navigate to the login page \"https://apps.brighthr.com\"(loginpage.feature:8)\r\n",
               "status": "failed"
             },
             "line": 8,
+            "name": "I navigate to the login page \"https://apps.brighthr.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://apps.brighthr.com",
+                  "offset": 30
+                }
+              ],
+              "location": "loginpage.iNavigateToTheLoginPage(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
             "name": "I fill the username with \"oluseyi.ojo\"",
             "match": {
               "arguments": [
@@ -26,13 +43,13 @@
               ],
               "location": "loginpage.i_fill_the_username_with(String)"
             },
-            "keyword": "Given "
+            "keyword": "When "
           },
           {
             "result": {
               "status": "skipped"
             },
-            "line": 9,
+            "line": 10,
             "name": "I fill the password with \"123456\"",
             "match": {
               "arguments": [
@@ -43,13 +60,13 @@
               ],
               "location": "loginpage.i_fill_the_password_with(String)"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
               "status": "skipped"
             },
-            "line": 10,
+            "line": 11,
             "name": "I click on the \"log me in\" button",
             "match": {
               "arguments": [
@@ -66,7 +83,7 @@
             "result": {
               "status": "skipped"
             },
-            "line": 11,
+            "line": 12,
             "name": "I verify that I am on my profile page",
             "match": {
               "location": "loginpage.iVerifyThatIAmOnMyProfilePage()"
@@ -76,7 +93,7 @@
         ]
       },
       {
-        "line": 15,
+        "line": 16,
         "name": "absence request",
         "description": "",
         "id": "book-absence;absence-request",
@@ -87,7 +104,7 @@
             "result": {
               "status": "skipped"
             },
-            "line": 16,
+            "line": 17,
             "name": "I click the \"request time off\" button",
             "match": {
               "arguments": [
@@ -104,7 +121,7 @@
             "result": {
               "status": "skipped"
             },
-            "line": 17,
+            "line": 18,
             "name": "I select \"Annual leave\" from the absence button",
             "match": {
               "arguments": [
@@ -121,21 +138,10 @@
             "result": {
               "status": "skipped"
             },
-            "line": 18,
-            "name": "I select the start date and time",
-            "match": {
-              "location": "loginpage.i_select_the_start_date_and_time()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
             "line": 19,
-            "name": "I select the end date and time",
+            "name": "I select the start date",
             "match": {
-              "location": "loginpage.i_select_the_end_date_and_time()"
+              "location": "loginpage.iSelectTheStartDate()"
             },
             "keyword": "And "
           },
@@ -144,6 +150,39 @@
               "status": "skipped"
             },
             "line": 20,
+            "name": "I select the start time",
+            "match": {
+              "location": "loginpage.iSelectTheStartTime()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "I select the end date",
+            "match": {
+              "location": "loginpage.iSelectTheEndDate()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "I select the end time",
+            "match": {
+              "location": "loginpage.iSelectTheEndTime()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
             "name": "I input the reason for absence",
             "match": {
               "location": "loginpage.i_input_the_reason_for_absence()"
@@ -154,7 +193,7 @@
             "result": {
               "status": "skipped"
             },
-            "line": 21,
+            "line": 24,
             "name": "I click the \"Add absence\" button",
             "match": {
               "arguments": [
@@ -171,7 +210,7 @@
             "result": {
               "status": "skipped"
             },
-            "line": 22,
+            "line": 25,
             "name": "I should see the message \"Annual Leave requested\"",
             "match": {
               "arguments": [

@@ -16,8 +16,10 @@ Feature: Book Absence
   Scenario: absence request
     When I click the "request time off" button
     And I select "Annual leave" from the absence button
-    And I select the start date and time
-    And I select the end date and time
+    And I select the start date
+    And I select the start time
+    And I select the end date
+    And I select the end time
     And I input the reason for absence
     And I click the "Add absence" button
     Then I should see the message "Annual Leave requested"

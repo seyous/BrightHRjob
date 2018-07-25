@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="BDD Test Suite" duration-ms="1522" started-at="2018-07-25T00:14:49Z" finished-at="2018-07-25T00:14:51Z">
+  <suite name="BDD Test Suite" duration-ms="1067" started-at="2018-07-25T01:04:28Z" finished-at="2018-07-25T01:04:29Z">
     <groups>
       <group name="cucumber">
         <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner@3c09711b]" name="feature" class="TestRunner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Login and Update Profile Test" duration-ms="1522" started-at="2018-07-25T00:14:49Z" finished-at="2018-07-25T00:14:51Z">
+    <test name="Login and Update Profile Test" duration-ms="1067" started-at="2018-07-25T01:04:28Z" finished-at="2018-07-25T01:04:29Z">
       <class name="TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestRunner@3c09711b]" name="setUpClass" is-config="true" duration-ms="1007" started-at="2018-07-25T00:14:49Z" finished-at="2018-07-25T00:14:50Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestRunner@3c09711b]" name="setUpClass" is-config="true" duration-ms="485" started-at="2018-07-25T01:04:28Z" finished-at="2018-07-25T01:04:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner@3c09711b]" name="feature" duration-ms="291" started-at="2018-07-25T00:14:51Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-07-25T00:14:51Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner@3c09711b]" name="feature" duration-ms="331" started-at="2018-07-25T01:04:29Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-07-25T01:04:29Z">
           <params>
             <param index="0">
               <value>
@@ -51,15 +51,15 @@ at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:114
 at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 at java.lang.Thread.run(Thread.java:748)
 Caused by: java.lang.NullPointerException
-at stepdefs.loginpage.i_fill_the_username_with(loginpage.java:24)
-at ✽.Given I fill the username with "oluseyi.ojo"(loginpage.feature:8)
+at stepdefs.loginpage.iNavigateToTheLoginPage(loginpage.java:25)
+at ✽.Given I navigate to the login page "https://apps.brighthr.com"(loginpage.feature:8)
 ]]>
             </full-stacktrace>
           </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner@3c09711b]" name="tearDownClass" is-config="true" duration-ms="34" started-at="2018-07-25T00:14:51Z" finished-at="2018-07-25T00:14:51Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner@3c09711b]" name="tearDownClass" is-config="true" duration-ms="41" started-at="2018-07-25T01:04:29Z" finished-at="2018-07-25T01:04:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

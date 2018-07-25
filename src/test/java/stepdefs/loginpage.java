@@ -20,7 +20,9 @@ public class loginpage {
 
     @Given("^I navigate to the login page \"([^\"]*)\"$")
     public void iNavigateToTheLoginPage(String arg1)  {
-
+        System.setProperty("webdriver.gecko.driver", "C:\\Users\\OJO\\IdeaProjects\\BrightHRexercise\\src\\test\\resources\\geckodriver\\geckodriver.exe");
+        String appl = "https://app.brighthr.com";
+        Hooks.driver.get(appl);
 
     }
 
@@ -49,7 +51,7 @@ public class loginpage {
 
     @When("^I click the \"([^\"]*)\" button$")
     public void i_click_the_button(String arg1) {
-        Hooks.driver.findElement(By.cssSelector("mt-2sc-bZQynMiEonMc")).click();
+        Hooks.driver.findElement(By.className("cta mr-2")).click();
     }
 
     @When("^I select \"([^\"]*)\" from the absence button$")
@@ -58,17 +60,34 @@ public class loginpage {
         select.selectByVisibleText("Annual Leave");
     }
 
-    @When("^I select the start date and time$")
-    public void i_select_the_start_date_and_time() {
+    @And("^I select the start date$")
+    public void iSelectTheStartDate() {
         WebElement datepicker = Hooks.driver.findElement(By.xpath("//*[@id='start-date']"));
         datepicker.sendKeys("30/07/2018");
     }
 
-    @When("^I select the end date and time$")
-    public void i_select_the_end_date_and_time() {
+
+    @And("^I select the start time$")
+    public void iSelectTheStartTime()  {
+        select = new Select(Hooks.driver.findElement(By.className("ng-pristine ng-valid ng-touched")));
+        select.selectByValue("Full Day");
+    }
+
+    @And("^I select the end date$")
+    public void iSelectTheEndDate()  {
         WebElement datepicker = Hooks.driver.findElement(By.xpath("//*[@id='end-date']"));
         datepicker.sendKeys("30/08/2018");
     }
+
+
+    @And("^I select the end time$")
+    public void iSelectTheEndTime()  {
+        select = new Select(Hooks.driver.findElement(By.className("ng-valid ng-dirty ng-touched")));
+        select.selectByValue("Full Day");
+    }
+
+
+
 
     @When("^I input the reason for absence$")
     public void i_input_the_reason_for_absence() {
@@ -82,6 +101,7 @@ public class loginpage {
         String Expectedmessage = "Back to profile";
         Assert.assertEquals(Message, Expectedmessage);
     }
+
 
 
 }

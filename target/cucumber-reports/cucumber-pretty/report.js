@@ -15,23 +15,42 @@ formatter.background({
 });
 formatter.step({
   "line": 8,
-  "name": "I fill the username with \"oluseyi.ojo\"",
+  "name": "I navigate to the login page \"https://apps.brighthr.com\"",
   "keyword": "Given "
 });
 formatter.step({
   "line": 9,
-  "name": "I fill the password with \"123456\"",
+  "name": "I fill the username with \"oluseyi.ojo\"",
   "keyword": "When "
 });
 formatter.step({
   "line": 10,
-  "name": "I click on the \"log me in\" button",
+  "name": "I fill the password with \"123456\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 11,
+  "name": "I click on the \"log me in\" button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 12,
   "name": "I verify that I am on my profile page",
   "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "https://apps.brighthr.com",
+      "offset": 30
+    }
+  ],
+  "location": "loginpage.iNavigateToTheLoginPage(String)"
+});
+formatter.result({
+  "duration": 227265181,
+  "error_message": "java.lang.NullPointerException\r\n\tat stepdefs.loginpage.iNavigateToTheLoginPage(loginpage.java:25)\r\n\tat ✽.Given I navigate to the login page \"https://apps.brighthr.com\"(loginpage.feature:8)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -43,9 +62,7 @@ formatter.match({
   "location": "loginpage.i_fill_the_username_with(String)"
 });
 formatter.result({
-  "duration": 197219544,
-  "error_message": "java.lang.NullPointerException\r\n\tat stepdefs.loginpage.i_fill_the_username_with(loginpage.java:24)\r\n\tat ✽.Given I fill the username with \"oluseyi.ojo\"(loginpage.feature:8)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -78,7 +95,7 @@ formatter.result({
   "status": "skipped"
 });
 formatter.scenario({
-  "line": 15,
+  "line": 16,
   "name": "absence request",
   "description": "",
   "id": "book-absence;absence-request",
@@ -86,37 +103,47 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 16,
+  "line": 17,
   "name": "I click the \"request time off\" button",
   "keyword": "When "
 });
 formatter.step({
-  "line": 17,
+  "line": 18,
   "name": "I select \"Annual leave\" from the absence button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 18,
-  "name": "I select the start date and time",
-  "keyword": "And "
-});
-formatter.step({
   "line": 19,
-  "name": "I select the end date and time",
+  "name": "I select the start date",
   "keyword": "And "
 });
 formatter.step({
   "line": 20,
-  "name": "I input the reason for absence",
+  "name": "I select the start time",
   "keyword": "And "
 });
 formatter.step({
   "line": 21,
-  "name": "I click the \"Add absence\" button",
+  "name": "I select the end date",
   "keyword": "And "
 });
 formatter.step({
   "line": 22,
+  "name": "I select the end time",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 23,
+  "name": "I input the reason for absence",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 24,
+  "name": "I click the \"Add absence\" button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 25,
   "name": "I should see the message \"Annual Leave requested\"",
   "keyword": "Then "
 });
@@ -145,13 +172,25 @@ formatter.result({
   "status": "skipped"
 });
 formatter.match({
-  "location": "loginpage.i_select_the_start_date_and_time()"
+  "location": "loginpage.iSelectTheStartDate()"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.match({
-  "location": "loginpage.i_select_the_end_date_and_time()"
+  "location": "loginpage.iSelectTheStartTime()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "loginpage.iSelectTheEndDate()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "loginpage.iSelectTheEndTime()"
 });
 formatter.result({
   "status": "skipped"
