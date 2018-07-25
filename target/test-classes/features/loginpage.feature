@@ -5,11 +5,10 @@ Feature: Book Absence
 
 
   Background: Successful login
-    Given I navigate to BrightHR webApp URL "https://app.brighthr.com"
-    When I fill the username with "oluseyi.ojo"
-    And I fill the password with "123456"
+    Given I fill the username with "oluseyi.ojo"
+    When I fill the password with "123456"
     And I click on the "log me in" button
-    And I am on the my profile page
+    Then I verify that I am on my profile page
 
 
 
