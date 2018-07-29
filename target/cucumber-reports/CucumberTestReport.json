@@ -11,9 +11,8 @@
         "steps": [
           {
             "result": {
-              "duration": 227265181,
-              "error_message": "java.lang.NullPointerException\r\n\tat stepdefs.loginpage.iNavigateToTheLoginPage(loginpage.java:25)\r\n\tat ✽.Given I navigate to the login page \"https://apps.brighthr.com\"(loginpage.feature:8)\r\n",
-              "status": "failed"
+              "duration": 21643494389,
+              "status": "passed"
             },
             "line": 8,
             "name": "I navigate to the login page \"https://apps.brighthr.com\"",
@@ -30,7 +29,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 374138390,
+              "status": "passed"
             },
             "line": 9,
             "name": "I fill the username with \"oluseyi.ojo\"",
@@ -47,7 +47,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 89924997,
+              "status": "passed"
             },
             "line": 10,
             "name": "I fill the password with \"123456\"",
@@ -64,7 +65,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 311737214,
+              "status": "passed"
             },
             "line": 11,
             "name": "I click on the \"log me in\" button",
@@ -81,19 +83,21 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 18323456,
+              "error_message": "java.lang.AssertionError: expected [https://app.brighthr.com/dashboard] but found [https://app.brighthr.com/login]\r\n\tat org.testng.Assert.fail(Assert.java:96)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:137)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:453)\r\n\tat org.testng.Assert.assertEquals(Assert.java:463)\r\n\tat stepdefs.loginpage.iAmOnMyProflePage(loginpage.java:54)\r\n\tat ✽.Then I am on my profle page(loginpage.feature:12)\r\n",
+              "status": "failed"
             },
             "line": 12,
-            "name": "I verify that I am on my profile page",
+            "name": "I am on my profle page",
             "match": {
-              "location": "loginpage.iVerifyThatIAmOnMyProfilePage()"
+              "location": "loginpage.iAmOnMyProflePage()"
             },
             "keyword": "Then "
           }
         ]
       },
       {
-        "line": 16,
+        "line": 17,
         "name": "absence request",
         "description": "",
         "id": "book-absence;absence-request",
@@ -104,7 +108,7 @@
             "result": {
               "status": "skipped"
             },
-            "line": 17,
+            "line": 18,
             "name": "I click the \"request time off\" button",
             "match": {
               "arguments": [
@@ -121,7 +125,7 @@
             "result": {
               "status": "skipped"
             },
-            "line": 18,
+            "line": 19,
             "name": "I select \"Annual leave\" from the absence button",
             "match": {
               "arguments": [
@@ -138,7 +142,7 @@
             "result": {
               "status": "skipped"
             },
-            "line": 19,
+            "line": 20,
             "name": "I select the start date",
             "match": {
               "location": "loginpage.iSelectTheStartDate()"
@@ -149,7 +153,7 @@
             "result": {
               "status": "skipped"
             },
-            "line": 20,
+            "line": 21,
             "name": "I select the start time",
             "match": {
               "location": "loginpage.iSelectTheStartTime()"
@@ -160,7 +164,7 @@
             "result": {
               "status": "skipped"
             },
-            "line": 21,
+            "line": 22,
             "name": "I select the end date",
             "match": {
               "location": "loginpage.iSelectTheEndDate()"
@@ -171,7 +175,7 @@
             "result": {
               "status": "skipped"
             },
-            "line": 22,
+            "line": 23,
             "name": "I select the end time",
             "match": {
               "location": "loginpage.iSelectTheEndTime()"
@@ -182,7 +186,7 @@
             "result": {
               "status": "skipped"
             },
-            "line": 23,
+            "line": 24,
             "name": "I input the reason for absence",
             "match": {
               "location": "loginpage.i_input_the_reason_for_absence()"
@@ -193,7 +197,7 @@
             "result": {
               "status": "skipped"
             },
-            "line": 24,
+            "line": 25,
             "name": "I click the \"Add absence\" button",
             "match": {
               "arguments": [
@@ -210,7 +214,7 @@
             "result": {
               "status": "skipped"
             },
-            "line": 25,
+            "line": 26,
             "name": "I should see the message \"Annual Leave requested\"",
             "match": {
               "arguments": [

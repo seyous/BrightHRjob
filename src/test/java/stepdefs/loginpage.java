@@ -9,20 +9,24 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import utility.Hooks;
+
+import java.util.Iterator;
+import java.util.Set;
 
 public class loginpage {
 
 
-    private Select select;
-
     @Given("^I navigate to the login page \"([^\"]*)\"$")
-    public void iNavigateToTheLoginPage(String arg1)  {
+    public void iNavigateToTheLoginPage(String arg1) {
         System.setProperty("webdriver.gecko.driver", "C:\\Users\\OJO\\IdeaProjects\\BrightHRexercise\\src\\test\\resources\\geckodriver\\geckodriver.exe");
         String appl = "https://app.brighthr.com";
         Hooks.driver.get(appl);
+        Hooks.driver.manage().window().maximize();
 
     }
 
@@ -42,22 +46,25 @@ public class loginpage {
         Hooks.driver.findElement(By.id("loginBtn")).click();
     }
 
-    @Then("^I verify that I am on my profile page$")
-    public void iVerifyThatIAmOnMyProfilePage() {
+    //opening a new window
+    @Then("^I am on my profle page$")
+    public void iAmOnMyProflePage()  {
         // Write code here that turns the phrase above into concrete actions
-        String specificText = "Your absence";
-        Assert.assertEquals(specificText, Hooks.driver.findElement(By.linkText("View my absences")).getText());
+        String URL = Hooks.driver.getCurrentUrl();
+        Assert.assertEquals(URL, "https://app.brighthr.com/dashboard" );
     }
 
     @When("^I click the \"([^\"]*)\" button$")
     public void i_click_the_button(String arg1) {
-        Hooks.driver.findElement(By.className("cta mr-2")).click();
+        WebDriverWait requesttime = new WebDriverWait(Hooks.driver,100);
+        requesttime.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".mt-2")));
+        Hooks.driver.findElement(By.cssSelector(".mt-2")).click();
     }
 
     @When("^I select \"([^\"]*)\" from the absence button$")
     public void i_select_from_the_absence_button(String arg1) {
-        select = new Select(Hooks.driver.findElement(By.xpath("//*[@id='absenceTypeSelect']")));
-        select.selectByVisibleText("Annual Leave");
+        Select select = new Select(Hooks.driver.findElement(By.id("absenceTypeSelect")));
+        select.selectByValue("Annual Leave");
     }
 
     @And("^I select the start date$")
@@ -68,25 +75,23 @@ public class loginpage {
 
 
     @And("^I select the start time$")
-    public void iSelectTheStartTime()  {
-        select = new Select(Hooks.driver.findElement(By.className("ng-pristine ng-valid ng-touched")));
+    public void iSelectTheStartTime() {
+        Select select = new Select(Hooks.driver.findElement(By.className("ng-pristine ng-valid ng-touched")));
         select.selectByValue("Full Day");
     }
 
     @And("^I select the end date$")
-    public void iSelectTheEndDate()  {
+    public void iSelectTheEndDate() {
         WebElement datepicker = Hooks.driver.findElement(By.xpath("//*[@id='end-date']"));
         datepicker.sendKeys("30/08/2018");
     }
 
 
     @And("^I select the end time$")
-    public void iSelectTheEndTime()  {
-        select = new Select(Hooks.driver.findElement(By.className("ng-valid ng-dirty ng-touched")));
+    public void iSelectTheEndTime() {
+        Select select = new Select(Hooks.driver.findElement(By.className("ng-valid ng-dirty ng-touched")));
         select.selectByValue("Full Day");
     }
-
-
 
 
     @When("^I input the reason for absence$")
@@ -105,3 +110,5 @@ public class loginpage {
 
 
 }
+
+

@@ -35,7 +35,7 @@ formatter.step({
 });
 formatter.step({
   "line": 12,
-  "name": "I verify that I am on my profile page",
+  "name": "I am on my profle page",
   "keyword": "Then "
 });
 formatter.match({
@@ -48,9 +48,8 @@ formatter.match({
   "location": "loginpage.iNavigateToTheLoginPage(String)"
 });
 formatter.result({
-  "duration": 227265181,
-  "error_message": "java.lang.NullPointerException\r\n\tat stepdefs.loginpage.iNavigateToTheLoginPage(loginpage.java:25)\r\n\tat ✽.Given I navigate to the login page \"https://apps.brighthr.com\"(loginpage.feature:8)\r\n",
-  "status": "failed"
+  "duration": 21643494389,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -62,7 +61,8 @@ formatter.match({
   "location": "loginpage.i_fill_the_username_with(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 374138390,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -74,7 +74,8 @@ formatter.match({
   "location": "loginpage.i_fill_the_password_with(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 89924997,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -86,16 +87,19 @@ formatter.match({
   "location": "loginpage.i_click_on_the_button(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 311737214,
+  "status": "passed"
 });
 formatter.match({
-  "location": "loginpage.iVerifyThatIAmOnMyProfilePage()"
+  "location": "loginpage.iAmOnMyProflePage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 18323456,
+  "error_message": "java.lang.AssertionError: expected [https://app.brighthr.com/dashboard] but found [https://app.brighthr.com/login]\r\n\tat org.testng.Assert.fail(Assert.java:96)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:137)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:453)\r\n\tat org.testng.Assert.assertEquals(Assert.java:463)\r\n\tat stepdefs.loginpage.iAmOnMyProflePage(loginpage.java:54)\r\n\tat ✽.Then I am on my profle page(loginpage.feature:12)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
-  "line": 16,
+  "line": 17,
   "name": "absence request",
   "description": "",
   "id": "book-absence;absence-request",
@@ -103,47 +107,47 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 17,
+  "line": 18,
   "name": "I click the \"request time off\" button",
   "keyword": "When "
 });
 formatter.step({
-  "line": 18,
+  "line": 19,
   "name": "I select \"Annual leave\" from the absence button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 19,
+  "line": 20,
   "name": "I select the start date",
   "keyword": "And "
 });
 formatter.step({
-  "line": 20,
+  "line": 21,
   "name": "I select the start time",
   "keyword": "And "
 });
 formatter.step({
-  "line": 21,
+  "line": 22,
   "name": "I select the end date",
   "keyword": "And "
 });
 formatter.step({
-  "line": 22,
+  "line": 23,
   "name": "I select the end time",
   "keyword": "And "
 });
 formatter.step({
-  "line": 23,
+  "line": 24,
   "name": "I input the reason for absence",
   "keyword": "And "
 });
 formatter.step({
-  "line": 24,
+  "line": 25,
   "name": "I click the \"Add absence\" button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 25,
+  "line": 26,
   "name": "I should see the message \"Annual Leave requested\"",
   "keyword": "Then "
 });

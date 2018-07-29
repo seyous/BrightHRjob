@@ -3,27 +3,26 @@ package utility;
 
         import cucumber.api.java.After;
         import cucumber.api.java.Before;
-        import org.junit.AfterClass;
-        import org.junit.BeforeClass;
         import org.openqa.selenium.WebDriver;
         import org.openqa.selenium.firefox.FirefoxDriver;
-
+        import org.testng.annotations.AfterSuite;
+        import org.testng.annotations.BeforeSuite;
 
 
 public class Hooks {
 
 
-    public static WebDriver driver ;
+    public static final WebDriver driver = new FirefoxDriver(); ;
 
-    @BeforeClass
-    public void openHomePage() {
+@BeforeSuite
+    public void openHomePage()  {
 
-    driver = new FirefoxDriver();
+
        }
 
 
 
-    @AfterClass
+@AfterSuite
     public void CloseBrowser() {
         driver.quit();
     }

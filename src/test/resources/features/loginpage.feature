@@ -9,7 +9,8 @@ Feature: Book Absence
     When I fill the username with "oluseyi.ojo"
     And I fill the password with "123456"
     And I click on the "log me in" button
-    Then I verify that I am on my profile page
+    Then I am on my profle page
+
 
 
 

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jul 25 02:04:28 WAT 2018</td>
+<td>Started on:</td><td>Sun Jul 29 15:53:42 WAT 2018</td>
 </tr>
-<tr><td>Total time:</td><td>1 seconds (1067 ms)</td>
+<tr><td>Total time:</td><td>23 seconds (23349 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,18 +76,18 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='TestRunner.feature()'><b>feature</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Feature<br>Parameters: Book Absence</td>
-<td><div><pre>cucumber.runtime.CucumberException: java.lang.NullPointerException
+<td><div><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: expected [https://app.brighthr.com/dashboard] but found [https://app.brighthr.com/login]
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at TestRunner.feature(TestRunner.java:29)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.lang.NullPointerException
-	at stepdefs.loginpage.iNavigateToTheLoginPage(loginpage.java:25)
-	at ?.Given I navigate to the login page &quot;https://apps.brighthr.com&quot;(loginpage.feature:8)
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace598093421", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace598093421'><pre>cucumber.runtime.CucumberException: java.lang.NullPointerException
+Caused by: java.lang.AssertionError: expected [https://app.brighthr.com/dashboard] but found [https://app.brighthr.com/login]
+	at stepdefs.loginpage.iAmOnMyProflePage(loginpage.java:54)
+	at ?.Then I am on my profle page(loginpage.feature:12)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1824202686", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1824202686'><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: expected [https://app.brighthr.com/dashboard] but found [https://app.brighthr.com/login]
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at TestRunner.feature(TestRunner.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -110,11 +110,17 @@ Caused by: java.lang.NullPointerException
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.lang.NullPointerException
-	at stepdefs.loginpage.iNavigateToTheLoginPage(loginpage.java:25)
-	at ?.Given I navigate to the login page &quot;https://apps.brighthr.com&quot;(loginpage.feature:8)
+Caused by: java.lang.AssertionError: expected [https://app.brighthr.com/dashboard] but found [https://app.brighthr.com/login]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at stepdefs.loginpage.iAmOnMyProflePage(loginpage.java:54)
+	at ?.Then I am on my profle page(loginpage.feature:12)
 </pre></div></td>
-<td>0</td>
+<td>22</td>
 <td>TestRunner@3c09711b</td></tr>
 </table><p>
 </body>
