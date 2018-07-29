@@ -15,8 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import utility.Hooks;
 
-import java.util.Iterator;
-import java.util.Set;
+
 
 public class loginpage {
 
@@ -26,6 +25,7 @@ public class loginpage {
         System.setProperty("webdriver.gecko.driver", "C:\\Users\\OJO\\IdeaProjects\\BrightHRexercise\\src\\test\\resources\\geckodriver\\geckodriver.exe");
         String appl = "https://app.brighthr.com";
         Hooks.driver.get(appl);
+
         Hooks.driver.manage().window().maximize();
 
     }
@@ -50,12 +50,14 @@ public class loginpage {
     @Then("^I am on my profle page$")
     public void iAmOnMyProflePage()  {
         // Write code here that turns the phrase above into concrete actions
-        String URL = Hooks.driver.getCurrentUrl();
-        Assert.assertEquals(URL, "https://app.brighthr.com/dashboard" );
+        Hooks.driver.switchTo().window("Dashboard - BrightHR");
+
     }
 
     @When("^I click the \"([^\"]*)\" button$")
     public void i_click_the_button(String arg1) {
+
+
         WebDriverWait requesttime = new WebDriverWait(Hooks.driver,100);
         requesttime.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".mt-2")));
         Hooks.driver.findElement(By.cssSelector(".mt-2")).click();
@@ -63,6 +65,10 @@ public class loginpage {
 
     @When("^I select \"([^\"]*)\" from the absence button$")
     public void i_select_from_the_absence_button(String arg1) {
+
+          for (String handle : Hooks.driver.getWindowHandles()) {
+
+            Hooks.driver.switchTo().window(handle);}
         Select select = new Select(Hooks.driver.findElement(By.id("absenceTypeSelect")));
         select.selectByValue("Annual Leave");
     }

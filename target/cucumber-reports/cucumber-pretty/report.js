@@ -48,7 +48,7 @@ formatter.match({
   "location": "loginpage.iNavigateToTheLoginPage(String)"
 });
 formatter.result({
-  "duration": 21643494389,
+  "duration": 21992966450,
   "status": "passed"
 });
 formatter.match({
@@ -61,7 +61,7 @@ formatter.match({
   "location": "loginpage.i_fill_the_username_with(String)"
 });
 formatter.result({
-  "duration": 374138390,
+  "duration": 414358827,
   "status": "passed"
 });
 formatter.match({
@@ -74,7 +74,7 @@ formatter.match({
   "location": "loginpage.i_fill_the_password_with(String)"
 });
 formatter.result({
-  "duration": 89924997,
+  "duration": 159428550,
   "status": "passed"
 });
 formatter.match({
@@ -87,16 +87,15 @@ formatter.match({
   "location": "loginpage.i_click_on_the_button(String)"
 });
 formatter.result({
-  "duration": 311737214,
+  "duration": 482072899,
   "status": "passed"
 });
 formatter.match({
   "location": "loginpage.iAmOnMyProflePage()"
 });
 formatter.result({
-  "duration": 18323456,
-  "error_message": "java.lang.AssertionError: expected [https://app.brighthr.com/dashboard] but found [https://app.brighthr.com/login]\r\n\tat org.testng.Assert.fail(Assert.java:96)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:137)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:453)\r\n\tat org.testng.Assert.assertEquals(Assert.java:463)\r\n\tat stepdefs.loginpage.iAmOnMyProflePage(loginpage.java:54)\r\n\tat ✽.Then I am on my profle page(loginpage.feature:12)\r\n",
-  "status": "failed"
+  "duration": 27772,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 17,
@@ -161,7 +160,9 @@ formatter.match({
   "location": "loginpage.i_click_the_button(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 168595711,
+  "error_message": "org.openqa.selenium.NoSuchWindowException: Unable to locate window: Dashboard - BrightHR\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027OJO-PC\u0027, ip: \u0027192.168.43.249\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_171\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8092, moz:profile: C:\\Users\\OJO\\AppData\\Local\\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}\nSession ID: cded52b1-5c63-4b91-ba00-a68e1867531b\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.window(RemoteWebDriver.java:902)\r\n\tat stepdefs.loginpage.i_click_the_button(loginpage.java:60)\r\n\tat ✽.When I click the \"request time off\" button(loginpage.feature:18)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [

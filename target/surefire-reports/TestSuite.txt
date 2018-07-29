@@ -1,9 +1,21 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 24.666 s <<< FAILURE! - in TestSuite
-feature(TestRunner)  Time elapsed: 22.588 s  <<< FAILURE!
-cucumber.runtime.CucumberException: java.lang.AssertionError: expected [https://app.brighthr.com/dashboard] but found [https://app.brighthr.com/login]
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 25.456 s <<< FAILURE! - in TestSuite
+feature(TestRunner)  Time elapsed: 23.502 s  <<< FAILURE!
+cucumber.runtime.CucumberException: 
+org.openqa.selenium.NoSuchWindowException: Unable to locate window: Dashboard - BrightHR
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'OJO-PC', ip: '192.168.43.249', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8092, moz:profile: C:\Users\OJO\AppData\Local\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: cded52b1-5c63-4b91-ba00-a68e1867531b
 	at TestRunner.feature(TestRunner.java:29)
-Caused by: java.lang.AssertionError: expected [https://app.brighthr.com/dashboard] but found [https://app.brighthr.com/login]
+Caused by: org.openqa.selenium.NoSuchWindowException: 
+Unable to locate window: Dashboard - BrightHR
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'OJO-PC', ip: '192.168.43.249', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8092, moz:profile: C:\Users\OJO\AppData\Local\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: cded52b1-5c63-4b91-ba00-a68e1867531b
 

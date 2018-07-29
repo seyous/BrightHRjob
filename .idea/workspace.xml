@@ -4,11 +4,8 @@
     <list default="true" id="69ec2272-83ee-49b8-a918-e9b8a12bf776" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/loginpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/loginpage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utility/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/loginpage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/loginpage.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-reports/CucumberTestReport.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/CucumberTestReport.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-reports/cucumber-pretty/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/cucumber-pretty/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/rerun.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/rerun.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/BDD Test Suite/Login and Update Profile Test.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/BDD Test Suite/Login and Update Profile Test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/BDD Test Suite/Login and Update Profile Test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/BDD Test Suite/Login and Update Profile Test.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
@@ -19,9 +16,7 @@
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/BDD Test Suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/BDD Test Suite/methods-alphabetical.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/BDD Test Suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/BDD Test Suite/methods.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/loginpage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/loginpage.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/loginpage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/loginpage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utility/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utility/Hooks.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -90,8 +85,8 @@
       <file leaf-file-name="loginpage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/loginpage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="166">
+              <caret line="52" column="63" selection-start-line="52" selection-start-column="63" selection-end-line="52" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -414,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532481024540</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Additional scenario to handle time added to code">
+      <created>1532876654355</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1532876654357</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -450,7 +452,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="bottom" id="TODO" order="9" />
@@ -459,9 +461,9 @@
       <window_info id="Image Layers" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" weight="0.3299435" />
-      <window_info active="true" anchor="right" id="Maven Projects" order="4" visible="true" weight="0.09344791" />
-      <window_info anchor="bottom" id="Version Control" order="0" weight="0.34011298" />
-      <window_info anchor="bottom" id="Run" order="5" visible="true" weight="0.319774" />
+      <window_info anchor="right" id="Maven Projects" order="4" visible="true" weight="0.09344791" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="0" visible="true" weight="0.34011298" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.319774" />
       <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
@@ -479,6 +481,32 @@
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="4" />
     </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -903,8 +931,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/loginpage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        <state relative-caret-position="166">
+          <caret line="52" column="63" selection-start-line="52" selection-start-column="63" selection-end-line="52" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

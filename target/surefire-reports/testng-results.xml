@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="BDD Test Suite" duration-ms="23349" started-at="2018-07-29T14:53:42Z" finished-at="2018-07-29T14:54:05Z">
+  <suite name="BDD Test Suite" duration-ms="23987" started-at="2018-07-29T23:09:05Z" finished-at="2018-07-29T23:09:29Z">
     <groups>
       <group name="cucumber">
         <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner@3c09711b]" name="feature" class="TestRunner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Login and Update Profile Test" duration-ms="23349" started-at="2018-07-29T14:53:42Z" finished-at="2018-07-29T14:54:05Z">
+    <test name="Login and Update Profile Test" duration-ms="23987" started-at="2018-07-29T23:09:05Z" finished-at="2018-07-29T23:09:29Z">
       <class name="TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestRunner@3c09711b]" name="setUpClass" is-config="true" duration-ms="553" started-at="2018-07-29T14:53:42Z" finished-at="2018-07-29T14:53:43Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestRunner@3c09711b]" name="setUpClass" is-config="true" duration-ms="387" started-at="2018-07-29T23:09:05Z" finished-at="2018-07-29T23:09:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner@3c09711b]" name="feature" duration-ms="22552" started-at="2018-07-29T14:53:43Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-07-29T14:54:05Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner@3c09711b]" name="feature" duration-ms="23358" started-at="2018-07-29T23:09:06Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-07-29T23:09:29Z">
           <params>
             <param index="0">
               <value>
@@ -24,10 +24,20 @@
           </params>
           <exception class="cucumber.runtime.CucumberException">
             <message>
-              <![CDATA[java.lang.AssertionError: expected [https://app.brighthr.com/dashboard] but found [https://app.brighthr.com/login]]]>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to locate window: Dashboard - BrightHR
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'OJO-PC', ip: '192.168.43.249', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8092, moz:profile: C:\Users\OJO\AppData\Local\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: cded52b1-5c63-4b91-ba00-a68e1867531b]]>
             </message>
             <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: expected [https://app.brighthr.com/dashboard] but found [https://app.brighthr.com/login]
+              <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchWindowException: Unable to locate window: Dashboard - BrightHR
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'OJO-PC', ip: '192.168.43.249', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8092, moz:profile: C:\Users\OJO\AppData\Local\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: cded52b1-5c63-4b91-ba00-a68e1867531b
 at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 at TestRunner.feature(TestRunner.java:29)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -50,22 +60,32 @@ at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 at java.lang.Thread.run(Thread.java:748)
-Caused by: java.lang.AssertionError: expected [https://app.brighthr.com/dashboard] but found [https://app.brighthr.com/login]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at org.testng.Assert.assertEquals(Assert.java:463)
-at stepdefs.loginpage.iAmOnMyProflePage(loginpage.java:54)
-at ✽.Then I am on my profle page(loginpage.feature:12)
+Caused by: org.openqa.selenium.NoSuchWindowException: Unable to locate window: Dashboard - BrightHR
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'OJO-PC', ip: '192.168.43.249', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8092, moz:profile: C:\Users\OJO\AppData\Local\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: cded52b1-5c63-4b91-ba00-a68e1867531b
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.window(RemoteWebDriver.java:902)
+at stepdefs.loginpage.i_click_the_button(loginpage.java:60)
+at ✽.When I click the "request time off" button(loginpage.feature:18)
 ]]>
             </full-stacktrace>
           </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner@3c09711b]" name="tearDownClass" is-config="true" duration-ms="40" started-at="2018-07-29T14:54:05Z" finished-at="2018-07-29T14:54:05Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner@3c09711b]" name="tearDownClass" is-config="true" duration-ms="58" started-at="2018-07-29T23:09:29Z" finished-at="2018-07-29T23:09:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
